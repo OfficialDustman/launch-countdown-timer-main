@@ -1,0 +1,125 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: hsl(235, 16%, 14%);
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.up {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/bg-stars.svg);
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    margin: 5rem 0;
+}
+
+.count {
+    display: flex;
+    gap: 1rem;
+}
+
+.count > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent > div {
+    height: 3.5rem;
+    width: 7rem;
+}
+
+.parent > h1{
+    height: 0;
+    margin-top: 0;
+}
+
+.parent::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    background-color: hsl(234, 17%, 12%);
+    height: 0.7rem;
+    width: 0.5rem;
+    border-radius: 0 50px 50px 0;
+    margin-right: 6.5rem;
+    margin-top: 3.15rem;
+}
+
+.parent::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    background-color: hsl(234, 17%, 12%);
+    height: 0.7rem;
+    width: 0.5rem;
+    border-radius: 50px 0 0 50px;
+    margin-left: 6.5rem;
+    margin-top: 3.15rem;
+}
+
+.top {
+    background-color: hsl(234, 17%, 12%);
+    filter: brightness(1.5);
+    border-radius: 7px 7px 0 0;
+    z-index: -1;
+    box-shadow: inset 0 -1px rgba(15, 15, 15, 0.85);
+}
+
+
+
+.btm {
+    background-color: hsl(236, 21%, 26%);
+    filter: brightness(0.8);
+    border-radius: 0 0 7px 7px;
+    z-index: -1;
+    box-shadow: 0px 7px hsl(234, 17%, 12%);
+}
+
+.txt {
+    position: relative;
+    color: hsl(345, 95%, 68%);
+    top : -6.2rem;
+    margin-bottom: -0.2rem;
+    font-size: 4.5rem;
+}
+
+h6 {
+    color: hsl(237, 18%, 59%);
+    top : -9.8rem;
+}
+
+.down {
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    background-image: url(./images/pattern-hills.svg);
+    justify-content: center;
+    align-items: center;
+}
+
+.socials{
+    display: flex;
+    gap: 1rem;
+}
